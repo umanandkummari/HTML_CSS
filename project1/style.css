@@ -1,0 +1,127 @@
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    list-style: 1.4;
+    font-weight: 300;
+    
+}
+.Hero-section{
+    background-image: url(images/developer.png);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text-container{
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 36px;
+}
+
+.lg-text{
+    font-size: 72px;
+    font-weight: 400;
+}
+.Black-box-section h2{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 72px;
+    font-weight:300;
+}
+.Black-box-section h2 span{
+    font-size: 96px;
+    font-weight: 400;
+}
+.work{
+    display: grid;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 50px auto;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    transition: 0.2s ease-in-out;
+}
+.card{
+    max-width: 320px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1,1,1,0.2);
+}
+.card:hover{
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1,1,1,0.3)  ;
+    transition: 0.2s ease-in-out;
+}
+.grid_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_content h3{
+    margin-bottom: 10px;
+}
+.card_content{
+    padding: 20px;
+}
+.Bottom_section{
+    display: flex;
+    flex-direction: row;
+    
+}
+.contact{
+    background-color: #515306;
+}
+.about{
+    background-color: #722300;
+}
+.contact, .about{
+    color: white;
+    padding: 36px;
+    min-height: 300px;
+}
+.contact p, .about p{
+    margin: 20px;
+}
+.contact h2, .about h2{
+    font-size: 64px;
+    font-weight: 300;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    padding: 20px;
+}
+@media(max-width:786px){
+    .Hero-section{
+        min-height: 50vh;
+    }
+    .text-container{
+        padding: 10px 0;
+        text-align: center;
+        font: 5px;
+    }
+    .lg-text{
+        font-size: 32px;
+    }
+    .Black-box-section h2{
+         font-size: 24px;
+    }
+    .Black-box-section h2 span{
+        font-size: 32px;
+        font-weight: 300;
+    }
+    .Bottom_section{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact h2, .about h2{
+        font-size: 32px;
+    }
+}
